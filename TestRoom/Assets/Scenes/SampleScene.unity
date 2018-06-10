@@ -358,7 +358,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 136110858}
         m_MethodName: seleccionarRespuesta
         m_Mode: 3
         m_Arguments:
@@ -473,6 +473,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3e6856f063e71740b80e6334607ca0e, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &136110858 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114847988736894998, guid: b3e6856f063e71740b80e6334607ca0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 136110857}
+  m_Script: {fileID: 11500000, guid: dc3bd6b963c432542aa83d293aa20c88, type: 3}
 --- !u!1 &214015118
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6, y: 0.0000114102695}
+  m_AnchoredPosition: {x: 6, y: -0.0000009898052}
   m_SizeDelta: {x: 95, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &539339966
@@ -1539,7 +1545,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 136110858}
         m_MethodName: seleccionarRespuesta
         m_Mode: 3
         m_Arguments:
@@ -2311,9 +2317,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838064160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71195b85903f60e47b3eba0d03517dc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 241b6e6b31bf47d4785950d57add6d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0.4
+  on: 0
 --- !u!1 &1894493310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2500,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 301880806}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.99999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
