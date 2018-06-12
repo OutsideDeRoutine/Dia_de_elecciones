@@ -19,7 +19,7 @@ public class PunteroCamara : MonoBehaviour {
                 hit.transform.GetComponent<IUsable>().seleccionado();
                 foreach(Material mat in hit.transform.GetComponent<Renderer>().materials)
                 {
-                    mat.SetColor("_OutlineColor", Color.white);
+                    mat.SetColor("_OutlineColor", mat.GetColor("_Color")+new Color(0.2f, 0.2f, 0.2f));
                 }
             }
         }

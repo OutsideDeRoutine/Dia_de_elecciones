@@ -4,7 +4,7 @@
 	{
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo", 2D) = "white" {}
-	_OutlineSize("Outline Size", Float) = 0
+	_OutlineSize("Outline Size", Float) = 0.5
 	_Cutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
 		_OutlineColor("Outline Color", Color) = (1,1,1,1)
 		_Glossiness("Smoothness", Range(0.0, 1.0)) = 0.5
