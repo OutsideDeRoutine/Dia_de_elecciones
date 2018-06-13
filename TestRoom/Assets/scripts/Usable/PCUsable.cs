@@ -6,10 +6,20 @@ public class PCUsable : AbstractUsable
 {
 
    public  GameObject pantalla;
+    bool pantallaEncendible = true;
+
     public override void accionInterna()
     {
-        pantalla.GetComponent<ScreenOnOff>().Enter();
+        if (pantallaEncendible)
+        {
+            pantalla.GetComponent<ScreenOnOff>().Enter();
+        }
     }
 
-
+    public void apagarPantalla()
+    {
+        Debug.Log("Pantalla apagada e inhabilitada, porque ya estamos en la lectura de finales");
+        pantallaEncendible = false;
+        pantalla.GetComponent<ScreenOnOff>().Exit();
+    }
 }

@@ -11,6 +11,7 @@ public class ControladorDePreguntas : MonoBehaviour {
 
     bool leyendoPregunta = false;
     int preguntaSeleccionada = 1;
+    bool finalActivo = false;
 
 
    void Start() {
@@ -101,7 +102,14 @@ public class ControladorDePreguntas : MonoBehaviour {
         }
         else
         {
-            GetComponent<ControladorTuboPreguntas>().colocarFinalEnTubo(getFinales());
+            if (!finalActivo)
+            {
+
+                Debug.Log("Acabadas las preguntas");
+                GameObject.FindObjectOfType<PCUsable>().apagarPantalla();
+                finalActivo = true;
+                GetComponent<ControladorTuboPreguntas>().colocarFinalEnTubo(getFinales());
+            }
         }
         
         

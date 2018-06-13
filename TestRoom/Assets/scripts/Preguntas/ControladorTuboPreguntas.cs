@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControladorTuboPreguntas : MonoBehaviour {
+
+    IList<String> respuestas;
 	
     public void colocarFinalEnTubo(IList<String> respuesta)
     {
+        respuestas = respuesta;
         //respuesta.final;
         //colocar el final del juego
     }
