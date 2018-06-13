@@ -604,6 +604,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.99998
       objectReference: {fileID: 0}
+    - target: {fileID: 1324772802618636, guid: b3e6856f063e71740b80e6334607ca0e, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3e6856f063e71740b80e6334607ca0e, type: 2}
   m_IsPrefabParent: 0
@@ -1284,7 +1288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6, y: 0.000009165554}
+  m_AnchoredPosition: {x: 6, y: 0.0000022841823}
   m_SizeDelta: {x: 95, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &539339966
@@ -3096,7 +3100,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 301880806}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9999998
+  m_Size: 0.99999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

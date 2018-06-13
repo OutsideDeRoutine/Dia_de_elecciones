@@ -10,8 +10,7 @@ public class ControladorTuboPreguntas : MonoBehaviour {
     public void colocarFinalEnTubo(IList<String> respuesta)
     {
         respuestas = respuesta;
-        //respuesta.final;
-        //colocar el final del juego
+        GameObject.FindObjectOfType<TuboUsable>().GetComponent<TuboUsable>().setFinal(this.mandarMensajeFinalJuego);
     }
 
     internal void mandarMensajeFinalJuego()
