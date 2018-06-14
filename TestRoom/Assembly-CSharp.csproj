@@ -113,7 +113,6 @@
     <Compile Include="Assets\scripts\Preguntas\ControladorTuboPreguntas.cs" />
     <Compile Include="Assets\scripts\Preguntas\Pregunta.cs" />
     <Compile Include="Assets\scripts\Preguntas\Respuesta.cs" />
-    <Compile Include="Assets\scripts\PressStart.cs" />
     <Compile Include="Assets\scripts\ScreenOnOff.cs" />
     <Compile Include="Assets\scripts\Usable\IUsable.cs" />
     <Compile Include="Assets\scripts\Usable\PCUsable.cs" />

@@ -11,7 +11,7 @@ public class ControladorPCPreguntas : MonoBehaviour{
     {
         //hacer cosas para colocar la pregunta y las respuestas en la pantalla
         //buscar por nombre
-        StopAllCoroutines();
+
         StartCoroutine(writeME(GameObject.Find("ContentPregunta1").GetComponent<Text>(), pregunta.resp1.texto));
         StartCoroutine(writeME(GameObject.Find("ContentPregunta2").GetComponent<Text>(), pregunta.resp2.texto));
         StartCoroutine(writeME(GameObject.Find("Pregunta").GetComponent<Text>(), pregunta.cuestion));
