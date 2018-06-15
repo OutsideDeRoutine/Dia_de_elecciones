@@ -119,6 +119,7 @@
     <Compile Include="Assets\scripts\Usable\PCUsable.cs" />
     <Compile Include="Assets\scripts\Usable\PunteroCamara.cs" />
     <Compile Include="Assets\scripts\Usable\TuboUsable.cs" />
+    <Compile Include="Assets\startSampleScene.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
