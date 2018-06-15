@@ -15,9 +15,7 @@ public class ControladorTuboPreguntas : MonoBehaviour {
 
     internal void mandarMensajeFinalJuego()
     {
-        //mandar mensaje de agradecimiento por participar en el experimento
-        //tener en cuenta los idiomas
-        throw new NotImplementedException();
+        GameObject.FindGameObjectWithTag("Paper").GetComponent<Animator>().SetBool("open",true);
     }
 
     public void finalizadaLecturaDeUnFinal()

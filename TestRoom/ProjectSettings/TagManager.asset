@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Usable
   - QuestCanvas
+  - Paper
   layers:
   - Default
   - TransparentFX
