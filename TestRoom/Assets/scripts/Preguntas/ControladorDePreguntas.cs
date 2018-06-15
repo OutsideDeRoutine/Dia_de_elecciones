@@ -17,8 +17,8 @@ public class ControladorDePreguntas : MonoBehaviour {
    void Start() {
         //vamos a Cargar las preguntas
         preguntas = new List<Pregunta>();
-        // string path = "Assets/Preguntas/"+Lenguaje.instance.textLenguaje+"_preguntas.xml"; 
-        string path = "EN_preguntas"; //CAMBIAR
+        string path = Lenguaje.instance.textLenguaje+"_preguntas"; 
+       
         TextAsset textAsset = (TextAsset)Resources.Load(path);
         XmlDocument doc = new XmlDocument();
 
