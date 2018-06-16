@@ -687,7 +687,7 @@ Prefab:
     - target: {fileID: 114305688738467890, guid: b3e6856f063e71740b80e6334607ca0e,
         type: 2}
       propertyPath: MoveToOnPaper.x
-      value: 4
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 114305688738467890, guid: b3e6856f063e71740b80e6334607ca0e,
         type: 2}
@@ -2243,7 +2243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8643529609fe1e4aaa3245bc8b85334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveToOnPaper: {x: 4, y: -1, z: 15}
+  MoveToOnPaper: {x: 3.7, y: -1, z: 15}
   paper: {fileID: 1698303010}
 --- !u!114 &1100480947
 MonoBehaviour:

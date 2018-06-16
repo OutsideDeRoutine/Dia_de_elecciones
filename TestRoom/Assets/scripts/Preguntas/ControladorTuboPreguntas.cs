@@ -19,7 +19,7 @@ public class ControladorTuboPreguntas : MonoBehaviour {
     internal void mandarMensajeFinalJuego()
     {
         GameObject.FindGameObjectWithTag("Paper").GetComponent<Animator>().SetBool("open",true);
-        StartCoroutine(MoveCameraAndActiveScreen(1.5f));
+        StartCoroutine(MoveCameraAndActiveScreen(1.7f));
     }
 
     public void finalizadaLecturaDeUnFinal()
@@ -34,8 +34,9 @@ public class ControladorTuboPreguntas : MonoBehaviour {
         Camera.main.GetComponent<MoveCamera>().isScreen = true;
         while (Vector3.Distance( this.transform.position, MoveToOnPaper)>0.1f)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, MoveToOnPaper, 0.1f);
-            Camera.main.transform.LookAt(paper.transform);
+            this.transform.position = Vector3.Lerp(this.transform.position, MoveToOnPaper, 0.05f);
+            var targetRotation = Quaternion.LookRotation(paper.transform.position - Camera.main.transform.position);
+            Camera.main.transform.rotation = Quaternion.Slerp(Camera.main.transform.rotation, targetRotation, 0.05f / Vector3.Distance(this.transform.position, MoveToOnPaper));
             yield return new WaitForFixedUpdate();
         }
         float currentTime = Time.time;
