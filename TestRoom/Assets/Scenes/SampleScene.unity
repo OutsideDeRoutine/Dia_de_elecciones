@@ -421,11 +421,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 45c84e39ab1d2fb419ff8eaf6e4c69bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.024
+      value: -0.023
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 45c84e39ab1d2fb419ff8eaf6e4c69bc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.303
+      value: 0.212
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 45c84e39ab1d2fb419ff8eaf6e4c69bc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -471,6 +471,10 @@ Prefab:
       propertyPath: m_TagString
       value: Paper
       objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 45c84e39ab1d2fb419ff8eaf6e4c69bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c8b2f39d90bbef43930efd393216c11, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45c84e39ab1d2fb419ff8eaf6e4c69bc, type: 3}
   m_IsPrefabParent: 0
@@ -3407,7 +3411,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698303006}
   m_LocalRotation: {x: 0.45524558, y: 0.54106325, z: -0.5410637, w: 0.4552495}
-  m_LocalPosition: {x: 0, y: 0, z: 15.832}
+  m_LocalPosition: {x: 0, y: 0, z: 15.834}
   m_LocalScale: {x: 0.0015124746, y: 0.0012070574, z: 0.001207058}
   m_Children:
   - {fileID: 1670309905}
@@ -3416,7 +3420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -99.84601}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.008, y: 0.826}
+  m_AnchoredPosition: {x: 4.088, y: 0.856}
   m_SizeDelta: {x: 1077.84, y: 850.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1710562723
