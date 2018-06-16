@@ -108,6 +108,7 @@ public class ControladorDePreguntas : MonoBehaviour {
                 Debug.Log("Acabadas las preguntas");
                 GameObject.FindObjectOfType<PCUsable>().apagarPantalla();
                 finalActivo = true;
+                GameObject.Find("AudioTuboEmiter").GetComponent<AudioSource>().Play();
                 GetComponent<ControladorTuboPreguntas>().colocarFinalEnTubo(getFinales());
             }
         }

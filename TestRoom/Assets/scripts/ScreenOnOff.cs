@@ -17,6 +17,7 @@ public class ScreenOnOff : MonoBehaviour {
     {
         if(!running)
         {
+            GameObject.Find("AudioPCEmiter").GetComponent<AudioSource>().Play();
             StartCoroutine(OnOff());
         }
     }
