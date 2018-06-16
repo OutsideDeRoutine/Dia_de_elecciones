@@ -44,7 +44,7 @@ public class finalController : MonoBehaviour {
     {
         end.SetActive(true);
         StopAllCoroutines();
-        text.transform.parent.gameObject.SetActive(false);
+        text.transform.parent.transform.parent.transform.parent.gameObject.SetActive(false);
     }
 
     public void Creditos()
