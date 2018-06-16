@@ -6,18 +6,16 @@ using UnityEngine.Video;
 
 public class CreditosManager : MonoBehaviour
 {
-
+    VideoPlayer videoPlayer;
     // Use this for initialization
     void Start()
     {
-
+        videoPlayer = GetComponent<VideoPlayer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        VideoPlayer videoPlayer = GetComponent<VideoPlayer>();
         if (videoPlayer.isPrepared)
         {
             if (!videoPlayer.isPlaying)

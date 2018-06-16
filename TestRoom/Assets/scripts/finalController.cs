@@ -58,10 +58,10 @@ public class finalController : MonoBehaviour {
         Color bcolor = Camera.main.backgroundColor;
         while (Time.time - currentTime < time)
         {
-            GameObject.FindGameObjectWithTag ("CanvasPlayer").GetComponent<Canvas>().GetComponent<CanvasGroup>().alpha = Mathf.Abs(((Time.time - currentTime) / time) - 1);
-            Camera.main.backgroundColor = Color.Lerp(bcolor, color, (Time.time - currentTime) / time);
+            GameObject.FindGameObjectWithTag ("CanvasPlayer").GetComponent<Canvas>().GetComponent<CanvasGroup>().alpha = Mathf.Abs(((Time.time - currentTime) / time));
             yield return new WaitForEndOfFrame();
         }
         SceneManager.LoadScene(level);
+        GameObject.DestroyImmediate(GameObject.FindGameObjectWithTag("CanvasPlayer"));
     }
 }
