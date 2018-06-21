@@ -14,10 +14,12 @@ public class ControladorTuboPreguntas : MonoBehaviour {
     {
         respuestas = respuesta;
         GameObject.FindObjectOfType<TuboUsable>().GetComponent<TuboUsable>().setFinal(this.mandarMensajeFinalJuego);
+        
     }
 
     internal void mandarMensajeFinalJuego()
     {
+        
         GameObject.FindGameObjectWithTag("Paper").GetComponent<Animator>().SetBool("open",true);
         StartCoroutine(MoveCameraAndActiveScreen(1.7f));
     }

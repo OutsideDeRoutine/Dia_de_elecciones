@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class TuboUsable : AbstractUsable
 {
-    bool finalActivo;
+    public bool finalActivo;
+    public bool finalActivado;
     Action todo;
     public override void accionInterna()
     {
         if (finalActivo)
         {
             todo();
+            finalActivado = true;
         }
     }
 

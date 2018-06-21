@@ -6,7 +6,8 @@ public class PCUsable : AbstractUsable
 {
 
    public  GameObject pantalla;
-    bool pantallaEncendible = true;
+
+    public bool pantallaEncendible = true;
 
     public override void accionInterna()
     {

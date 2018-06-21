@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenOnOff : MonoBehaviour {
+    public bool inUse;
     public float time;
     public bool on = false;
-    private bool running = false;
+    public bool running = false;
     private Material mat;
 	// Use this for initialization
 	void Start () {
@@ -40,11 +41,13 @@ public class ScreenOnOff : MonoBehaviour {
 
     public void Exit()
     {
-       if(!on)   ChangeState();
+        inUse = false;
+       if (!on)   ChangeState();
         Camera.main.GetComponent<MoveCamera>().isScreen = false;
     }
     public void Enter()
     {
+        inUse = true;
         if (on) ChangeState();
         Camera.main.GetComponent<MoveCamera>().isScreen = true;
     }
