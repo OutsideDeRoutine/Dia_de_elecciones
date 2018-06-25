@@ -35,7 +35,10 @@ public class finalController : MonoBehaviour {
         foreach (char c in str)
         {
             put.text += c;
-            yield return new WaitForSeconds(0.1f / str.Length);
+            for (float duration = 0.01f; duration > 0; duration -= Time.fixedDeltaTime)
+            {
+                yield return new WaitForFixedUpdate();
+            }
             i++;
         }
     }

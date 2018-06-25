@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ControladorPCPreguntas : MonoBehaviour{
 
-
-
     public void colocarPreguntaEnPantalla(Pregunta pregunta)
     {
         //hacer cosas para colocar la pregunta y las respuestas en la pantalla
@@ -24,7 +22,10 @@ public class ControladorPCPreguntas : MonoBehaviour{
         foreach(char c in str)
         {
             put.text += c;
-           yield return new WaitForSeconds(0.1f/str.Length);
+            for (float duration = 0.01f; duration > 0; duration -= Time.fixedDeltaTime)
+            {
+                yield return new WaitForFixedUpdate();
+            }
             i++;
         }
     }

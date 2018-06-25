@@ -6,22 +6,20 @@ using UnityEngine.Video;
 
 public class CreditosManager : MonoBehaviour
 {
+    
     VideoPlayer videoPlayer;
     // Use this for initialization
     void Start()
     {
+        
         videoPlayer = GetComponent<VideoPlayer>();
+        videoPlayer.skipOnDrop = false;
+        videoPlayer.loopPointReached += EndReached;
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
-        if (videoPlayer.isPrepared)
-        {
-            if (!videoPlayer.isPlaying)
-            {
-                SceneManager.LoadScene("MenuScene");
-            }
-        }
+        SceneManager.LoadScene("MenuScene");
     }
 }
