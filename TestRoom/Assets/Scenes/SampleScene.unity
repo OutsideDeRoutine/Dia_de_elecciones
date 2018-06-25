@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3746,8 +3746,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.836853, y: 7.284978, z: 0.83377624}
-  m_Center: {x: 0.31291616, y: -0.06759782, z: 0.0012116329}
+  m_Size: {x: 7.4739447, y: 7.284978, z: 0.83377624}
+  m_Center: {x: 0.6314529, y: -0.06759778, z: 0.0012116857}
 --- !u!114 &1295206043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6072,7 +6072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
